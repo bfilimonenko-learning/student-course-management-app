@@ -1,16 +1,44 @@
-# React + Vite
+# Student Course Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live: https://bfilimonenko.github.io/home_work45/
 
-Currently, two official plugins are available:
+A full-stack web application for managing students and courses. Supports creating, editing, and deleting records, assigning students to courses, and form validation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
-  uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast
-  Refresh
+## Tech Stack
 
-## Expanding the ESLint configuration
+**Frontend:** React 19, Redux Toolkit, React Router 7, MUI, Formik + Yup, Vite
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check
-out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate
-TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Backend:** Node.js, Express 5 (in-memory storage, REST API on port 3001)
+
+## Features
+
+- CRUD operations for students and courses
+- Assign students to courses
+- Form validation with Yup schemas
+- Login/logout flow
+- Toast notifications
+
+## Getting Started
+
+**Backend:**
+```bash
+cd backend
+npm install
+npm start
+```
+
+**Frontend:**
+```bash
+npm install
+npm run dev
+```
+
+The frontend runs on `http://localhost:5173`, backend on `http://localhost:3001`.
+
+## Deploy
+
+```bash
+npm run deploy
+```
+
+Deploys to GitHub Pages via `gh-pages`.
